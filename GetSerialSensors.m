@@ -1,4 +1,5 @@
-arduinoObj = serialport("COM5",9600);
+arduinoObj = serialport("/dev/cu.usbmodemFA131",9600);
+%arduinoObj = serialport("COM5",9600);
 configureTerminator(arduinoObj,"CR/LF");
 
 flush(arduinoObj);

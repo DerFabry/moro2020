@@ -1,4 +1,5 @@
-arduinoObj = arduino('COM5','Uno', 'Libraries', 'Ultrasonic');
+arduinoObj = arduino("/dev/cu.usbmodemFA131",'Uno', 'Libraries', 'Ultrasonic');
+%arduinoObj = arduino('COM5','Uno', 'Libraries', 'Ultrasonic');
 ultrasonicObj = ultrasonic(arduinoObj,'D3','D2');
 
 numberOfMeasurements = 100;
