@@ -1,4 +1,4 @@
-arduinoObj = serialport("/dev/cu.usbmodemFA131",9600);
+arduinoObj = serialport("/dev/tty.usbmodem14",9600);
 %arduinoObj = serialport("COM5",9600);
 configureTerminator(arduinoObj,"CR/LF");
 
@@ -11,12 +11,15 @@ angleArray = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 
 measurementsPerPoint = 100;
 d = length(distanceArray);
 a = length(angleArray);
-
-LaserSensorArray = zeros(d,a,measurementsPerPoint);
-for i = 1:a
+restart = exist('LaserSensorArray', 'var')
+if restart == 0
+    LaserSensorArray = zeros(d,a,measurementsPerPoint);
+end
+for i = 10:a
     for j = 1:d
         str = sprintf("Lasersensor ausrichten: %dmm, %d°", distanceArray(j), angleArray(i));
         input(str);
+        flush(arduinoObj);
         for k = 1:measurementsPerPoint
             data = readline(arduinoObj);
             LaserSensorArray(j, i, k) = str2double(data);
@@ -24,4 +27,4 @@ for i = 1:a
     end
 end
 
-clearvars -except UltrasonicSensorArray InfraredSensorArray
+clearvars -except LaserSensorArray
