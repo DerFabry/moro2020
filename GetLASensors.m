@@ -1,4 +1,4 @@
-arduinoObj = serialport("/dev/tty.usbmodem14",9600);
+arduinoObj = serialport("/dev/tty.usbmodemFA131",9600);
 %arduinoObj = serialport("COM5",9600);
 configureTerminator(arduinoObj,"CR/LF");
 
@@ -24,6 +24,8 @@ for i = 10:a
             data = readline(arduinoObj);
             LaserSensorArray(j, i, k) = str2double(data);
         end
+        filename = sprintf("LAwip%d%d.mat", angleArray(i),distanceArray(j));
+        save(filename, 'LaserSensorArray')
     end
 end
 
