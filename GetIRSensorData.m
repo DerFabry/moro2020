@@ -1,6 +1,5 @@
-arduinoObj = arduino("/dev/cu.usbmodemFA131",'Uno', 'Libraries', 'Ultrasonic');
-%arduinoObj = arduino('COM5','Uno', 'Libraries', 'Ultrasonic');
-ultrasonicObj = ultrasonic(arduinoObj,'D3','D2');
+%arduinoObj = arduino("/dev/cu.usbmodemFA131",'Uno', 'Libraries', 'Ultrasonic');
+arduinoObj = arduino('COM3','Uno', 'Libraries', 'Ultrasonic');
 
 numberOfMeasurements = 100;
 
@@ -14,12 +13,13 @@ if restart == 0
     InfraredSensorArray = zeros(d,a,measurementsPerPoint);
 end
 
-for i = 1:a
+for i = 1:9
     for j = 1:d
         str = sprintf("InfrarotSensor ausrichten: %dmm, %d°", distanceArray(j), angleArray(i));
         input(str);
         for k = 1:measurementsPerPoint
             InfraredSensorArray(j, i, k) = readVoltage(arduinoObj, 'A0');
+            %pause(60/1000);
         end
         filename = sprintf("IRwip%d%d.mat", angleArray(i),distanceArray(j));
         save(filename,'InfraredSensorArray')

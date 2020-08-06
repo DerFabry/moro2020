@@ -1,5 +1,5 @@
-arduinoObj = arduino("/dev/cu.usbmodemFA131",'Uno', 'Libraries', 'Ultrasonic');
-%arduinoObj = arduino('COM5','Uno', 'Libraries', 'Ultrasonic');
+%arduinoObj = arduino("/dev/cu.usbmodemFA131",'Uno', 'Libraries', 'Ultrasonic');
+arduinoObj = arduino('COM3','Uno', 'Libraries', 'Ultrasonic');
 ultrasonicObj = ultrasonic(arduinoObj,'D3','D2');
 
 numberOfMeasurements = 100;
@@ -14,12 +14,13 @@ if restart == 0
     UltrasonicSensorArray = zeros(d,a,measurementsPerPoint);
 end
 
-for i = 5:a
+for i = 7:a
     for j = 1:d
         str = sprintf("Ultraschallsensor ausrichten: %dmm, %d°", distanceArray(j), angleArray(i));
         input(str);
         for k = 1:measurementsPerPoint
             UltrasonicSensorArray(j, i, k) = readDistance(ultrasonicObj);
+            pause(60/1000);
         end
         filename = sprintf("USwip%d%d.mat", angleArray(i),distanceArray(j));
         save(filename, 'UltrasonicSensorArray')

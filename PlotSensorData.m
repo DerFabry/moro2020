@@ -11,7 +11,7 @@ Markers = {'--x', '--o', '--s', '--^', '--+', '--*', '--d', '--.', '--v', '--<',
 
 set(groot,'DefaultAxesColorOrder', [0 0 0; 1 0 0; 0 1 0; 0 0 1],'DefaultAxesLineStyleOrder',Markers)
 
-for j = 1:length(angleArray)
+for j = 1:9
     figure('Name', sprintf('ultrasonic sensor @ %d°', angleArray(j)), 'visible', 'off');
     hold on
     for i = 1:length(distanceArray)
