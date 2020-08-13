@@ -13,7 +13,7 @@ if restart == 0
     InfraredSensorArray = zeros(d,a,measurementsPerPoint);
 end
 
-for i = 1:9
+for i = 8:9
     for j = 1:d
         str = sprintf("InfrarotSensor ausrichten: %dmm, %d°", distanceArray(j), angleArray(i));
         input(str);

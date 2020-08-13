@@ -65,7 +65,7 @@ end
 
 figure('Name', 'infrared sensor median values', 'visible', 'off');
 hold on
-for i = 1:length(angleArray)
+for i = 1:9
     plot(distanceArray, IRMedianArray(:,i), "DisplayName", sprintf('%d°', angleArray(i)));
 end
 title("infrared sensor median values")
@@ -76,7 +76,7 @@ saveas(gcf, "Figures/infrared sensor median values.png");
 
 figure('Name', 'laser sensor median values', 'visible', 'off');
 hold on
-for i = 1:length(angleArray)
+for i = 1:9
     plot(distanceArray, LAMedianArray(:,i), "DisplayName", sprintf('%d°', angleArray(i)));
 end
 title("laser sensor median values")
@@ -87,7 +87,7 @@ saveas(gcf, "Figures/laser sensor median values.png");
 
 figure('Name', 'ultra sonic sensor median values', 'visible', 'off');
 hold on
-for i = 1:length(angleArray)
+for i = 1:9
     plot(distanceArray, USMedianArray(:,i), "DisplayName", sprintf('%d°', angleArray(i)));
 end
 title("ultra sonic sensor median values")
