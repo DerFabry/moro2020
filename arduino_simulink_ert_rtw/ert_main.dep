@@ -1,0 +1,47 @@
+ert_main.o: \
+ S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/ert_main.c \
+ S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/arduino_simulink.h \
+ S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/rtwtypes.h \
+ S:/PROGRA~3/MATLAB/R2020a/simulink/include/rtw_continuous.h \
+ S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/rtwtypes.h \
+ S:/PROGRA~3/MATLAB/R2020a/simulink/include/rtw_solver.h \
+ S:/PROGRA~3/MATLAB/R2020a/simulink/include/rtw_continuous.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2020a/toolbox/target/shared/svd/include/MW_AnalogIn.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2020a/toolbox/target/shared/svd/include/MW_SVD.h \
+ S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/arduino_simulink_types.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2020a/toolbox/target/shared/svd/include/MW_SVD.h \
+ S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/MW_target_hardware_resources.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2020a/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include/arduinoAVRScheduler.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2020a/3P.instrset/arduinoide.instrset/hardware/arduino/avr/cores/arduino/Arduino.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2020a/3P.instrset/arduinoide.instrset/hardware/arduino/avr/cores/arduino/binary.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2020a/3P.instrset/arduinoide.instrset/hardware/arduino/avr/variants/standard/pins_arduino.h
+
+S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/arduino_simulink.h:
+
+S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/rtwtypes.h:
+
+S:/PROGRA~3/MATLAB/R2020a/simulink/include/rtw_continuous.h:
+
+S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/rtwtypes.h:
+
+S:/PROGRA~3/MATLAB/R2020a/simulink/include/rtw_solver.h:
+
+S:/PROGRA~3/MATLAB/R2020a/simulink/include/rtw_continuous.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2020a/toolbox/target/shared/svd/include/MW_AnalogIn.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2020a/toolbox/target/shared/svd/include/MW_SVD.h:
+
+S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/arduino_simulink_types.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2020a/toolbox/target/shared/svd/include/MW_SVD.h:
+
+S:/Documents/MATLAB/Examples/R2020a/arduinoio/moro2020/arduino_simulink_ert_rtw/MW_target_hardware_resources.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2020a/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include/arduinoAVRScheduler.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2020a/3P.instrset/arduinoide.instrset/hardware/arduino/avr/cores/arduino/Arduino.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2020a/3P.instrset/arduinoide.instrset/hardware/arduino/avr/cores/arduino/binary.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2020a/3P.instrset/arduinoide.instrset/hardware/arduino/avr/variants/standard/pins_arduino.h:
